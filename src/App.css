@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body{
+  overflow-x: hidden !important;
+}
+
+.mainContainer{
+  display: flex;
+  justify-content: center;
+  background: #F3F2ED;
+}
+
+.container{
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-evenly;
+}

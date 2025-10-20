@@ -1,0 +1,76 @@
+:root {
+  --Brand-background-subtle: #f3f2ed;
+  --Primary-Surface-Default: #2a759d;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--Brand-background-subtle);
+}
+
+.splashcontainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+  background-color: var(--Brand-background-subtle);
+}
+
+.splashCircle {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  transform: scale(1);
+  background-color: var(--Primary-Surface-Default);
+  animation: scalling 8s linear 1s forwards;
+}
+
+@keyframes scalling {
+  0% {
+    transform: scale(1);
+  }
+  10%,
+  25% {
+    transform: scale(2);
+  }
+
+  30%,
+  45% {
+    transform: scale(10);
+  }
+
+  50%,
+  65% {
+    transform: scale(1);
+}
+
+75%,
+100% {
+    transform: scale(100);
+  }
+}
+
+.splashcontainer img {
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    transform: translate(-50%, 120%);
+    animation: opacity 2s linear 7s forwards;
+}
+
+@keyframes opacity {
+    from{
+        opacity: 0;
+    }
+    to{
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
